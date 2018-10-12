@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: pinof
+ * User: pino fattoruso
  * Date: 07/10/2018
  * Time: 21:21
  */
@@ -28,7 +28,7 @@ class ConnectionDB{
         }
     }
 
-    public static function getInstance(){
+    public static function getInstance():ConnectionDB{
         if(static::$instance === null){
             static::$instance = new static();
         }
